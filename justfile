@@ -38,8 +38,10 @@ delete name:
   @rm -rf {{posts_dir}}/{{name}}
 
 deploy:
+  @echo "Fetching latest data"
+  git pull
   @echo "Building blog"
   pnpm build
   @echo "Uploading to server directory"
-  sudo rsync --progress -av --chown=www-data:services {{root}}/dist/ {{deploy_dir}}
+  rsync --progress -av {{root}}/dist/ {{deploy_dir}}
 
