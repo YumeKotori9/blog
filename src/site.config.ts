@@ -152,23 +152,21 @@ const config: SiteConfig = {
   // IMPORTANT: Update giscus.json in the root of the project with your own website URL
   // If you don't want to use Giscus, set this to undefined.
   giscus: {
-    repo: 'yumekotori9/yumekotori9.github.io',
+    repo: 'yumekotori9/blog',
     repoId: 'R_kgDOQQ5wEQ',
     category: 'Comments',
     categoryId: 'DIC_kwDOQQ5wEc4CxjOL',
-    mapping: 'pathname',
     reactionsEnabled: true, // Enable reactions on post itself
-    theme: 'catppuccin_mocha',
   },
   // These are characters available for the character chat feature.
   // To add your own character, add an image file to the top-level `/public` directory
   // Make sure to compress the image to a web-friendly size (<100kb)
   // Try using the excellent https://squoosh.app web app for creating small webp files
-  // characters: {
-  //   owl: '/owl.webp',
-  //   unicorn: '/unicorn.webp',
-  //   duck: '/duck.webp',
-  // },
+  characters: {
+    owl: '/owl.webp',
+    unicorn: '/unicorn.webp',
+    duck: '/duck.webp',
+  },
 }
 
 export default config

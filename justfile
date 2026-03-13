@@ -41,5 +41,5 @@ deploy:
   @echo "Building blog"
   pnpm build
   @echo "Uploading to server directory"
-  rsync --progress -av --chown=www-data:services dist {{deploy_dir}}
+  sudo rsync --progress -av --chown=www-data:services {{root}}/dist/ {{deploy_dir}}
 
