@@ -29,7 +29,7 @@ export default defineConfig({
   server: {
     port: 8000,
     // host: true
-    allowedHosts: ['devtest.cuxim.com']
+    allowedHosts: ['devtest.cuxim.com', 'kotori.cuxim.com'],
   },
   site: siteConfig.site,
   trailingSlash: siteConfig.trailingSlashes ? 'always' : 'never',

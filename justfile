@@ -1,6 +1,7 @@
 root := justfile_directory()
 posts_dir := root + "/src/content/posts"
 editor := "nvim"
+deploy_dir := "/srv/kotori_blog/blog"
 
 default:
   @just --list
@@ -35,3 +36,10 @@ edit name:
 delete name:
   @echo "Deleting post {{name}}"
   @rm -rf {{posts_dir}}/{{name}}
+
+deploy:
+  @echo "Building blog"
+  pnpm build
+  @echo "Uploading to server directory"
+  rsync --progress -av --chown=www-data:services dist {{deploy_dir}}
+
