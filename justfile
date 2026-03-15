@@ -43,5 +43,5 @@ deploy:
   @echo "Building blog"
   pnpm build
   @echo "Uploading to server directory"
-  rsync --progress -av {{root}}/dist/ {{deploy_dir}}
+  sudo rsync --progress -av {{root}}/dist/ {{deploy_dir}}
 
