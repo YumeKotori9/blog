@@ -1,0 +1,87 @@
+---
+title: 'The area of an inscribed triangle'
+published: 2025-08-19
+draft: false
+description: 'Various calculations to obtain a formula to get the area if an inscribed triangle'
+tags: ['math']
+toc: true
+---
+
+Some days ago, a friend presented me a problem: If you have a circle of radius
+$r$, Which is the inscribed quadrilateral with the biggest area.
+
+Currently I don't have an answer for that question, but I decided to try
+something more easy. Which is the inscribed triangle with the biggest area?
+
+Even if it seems more easy, I don't have a simple solution. The intuition tells
+me that probably is the quadrilateral triangle, but in math intuition is not
+enough, it's necessary a proof.
+
+To attack the problem, I decided to take some suppositions. First, the circle
+will be of radius $$. Second the triangle will have three vertices, $A$, $B$
+and $C$, that lies in the circle.Third $C$ will be the point $(-1,0)$ and last
+I will express $A$ and $B$ with polar coordinates, as follows:
+
+$$
+A = (1; \alpha),
+\qquad
+B = (1; \beta),
+\quad
+-\pi < \beta < \alpha < \pi.
+$$
+
+The first thought I had was: How I can get the area of the triangle? Well, this
+is an interesting question, what I will do is to know how to get the area of
+the parallelogram that defines two vectors. If I know this area, then I can
+just divide by two and get the area of the triangle that defines two vector.
+And how this can help me? Easy, if I know how to calculate the area of this
+triangle I have two options to calculate the area of the triangle $\triangle
+ABC$:
+
+1. Use $C-A$ and $C-B$ as the vectors, since the triangle defined by these two
+   vectors is congruent of the triangle $\triangle ABC$.
+2. If $O$ is the origin $(0,0)$, then calculate the area of the triangles
+   $\triangle AOB$, $\triangle BOC$ and $\triangle AOC$.
+
+## The area of the parallelogram defined by two vectors
+
+Suppose that we have two vectors $\gdef\u{\bec u} \u$ and $\gdef\v{\bec v} \v$,
+together with the origin and the vector $\u + \v$ form a parallelogram. If
+$\theta$ is the angle defined by $\u$ and $\v$ a easy way to calculate the
+area $A_{\u\v}$ of the parallelogram defined by $\u$ and $\v$ is
+
+$$
+A_{\u\v}= \norm{\u} \norm{\v} \sin\theta.
+$$
+
+The proof of this property is simple, the formula for the area of a
+parallelogram it's just base times height. We can use any vector as the base,
+and for the height, we can just use trigonometry and it will be the other
+vector times the sine of the angle between the vectors.
+
+It's possible to calculate $\sin\theta$ in terms of $\u$ and $\v$. To do this,
+first, it's easies to calculate $A_{\u\v}^2$, because we can convert
+$\sin^2\theta = 1 - \cos^2\theta$. This way we got the next formula:
+
+$$
+  A_{\u\v} = \norm{\u}^2 \norm{\v^2} (1 - \cos^2\theta)
+$$
+
+It might looks worse than the last formula, the change of sine to cosine makes
+the formula more easiest, just because if we use the cosine law we got the next formula
+
+$$
+\cos\theta = \frac{\u\cdot\v}{\norm{\u}\norm{\v}}.
+$$
+
+This way, if we join both formulas, we finally got a really easy way of
+calculate the area of the parallelogram defined by $\u$ and $\v$:
+
+$$
+A_{\u\v}^2 = \norm{\u}^2 \norm{v}^2 - (u\cdot v)^2.
+$$
+
+Some people may look this formula familiar. And that's because is related to
+the Cauchy-Swartz inequality. Indeed this is a nice proof of the Cauchy-Swartz
+inequality, if we asume that we are in a Euclidean space (since we use terms
+like area or angle between two vectors).
