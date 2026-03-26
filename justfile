@@ -37,10 +37,23 @@ delete name:
   @echo "Deleting post {{name}}"
   @rm -rf {{posts_dir}}/{{name}}
 
+build-posts:
+  @echo "Prevent social cards being compiled"
+  mv {{root}}/src/pages/social-cards/\[slug\].png.ts {{root}}/src/pages/social-cards/\[slug\].png.ts.bak
+  @echo "Building blog"
+  pnpm build
+  mv {{root}}/src/pages/social-cards/\[slug\].png.ts.bak {{root}}/src/pages/social-cards/\[slug\].png.ts
+
+
+
 deploy:
   @echo "Fetching latest data"
   git pull
-  @echo "Building blog"
+  @echo "Building only posts"
+  just build-posts
+  @echo "Uploading to server directory"
+  sudo rsync --progress -av {{root}}/dist/ {{deploy_dir}}
+  @echo "Building full blog"
   pnpm build
   @echo "Uploading to server directory"
   sudo rsync --progress -av {{root}}/dist/ {{deploy_dir}}
