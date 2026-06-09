@@ -1,7 +1,7 @@
 root := justfile_directory()
 posts_dir := root + "/src/content/posts"
 editor := "nvim"
-deploy_dir := "/srv/kotori_blog/blog"
+deploy_dir := "/srv/blog/files"
 
 default:
   @just --list
