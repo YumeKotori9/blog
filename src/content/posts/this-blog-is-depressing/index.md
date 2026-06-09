@@ -1,7 +1,7 @@
 ---
 title: 'This blog is depressing'
 published: 2025-12-31
-draft: false
+draft: true
 description: 'Me just trying to justify bullshit'
 tags: ['random']
 ---

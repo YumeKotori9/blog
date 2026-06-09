@@ -1,7 +1,7 @@
 ---
 title: 'I lost my motivation'
 published: 2026-03-13
-draft: false
+draft: true
 description: 'Some thoughts about motivation and happiness while doing things'
 tags: ['random']
 ---

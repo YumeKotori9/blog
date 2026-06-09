@@ -1,19 +1,19 @@
 ---
 title: 'How is being happy?'
 published: 2025-11-17
-draft: false
+draft: true
 description: 'How I feel after half year on antidepressants'
 tags: ['random']
 ---
 
-Since how being sad becomes a normal thing? I don't remember be a sad child, but I remember
-that I was not the most happy when I was 10 years old.
+Since how being sad becomes a normal thing? I don't remember be a sad child, but
+I remember that I was not the most happy when I was 10 years old.
 
-Being sad became more normal since that. My middle school was fine, but something always felt
-wrong.
+Being sad became more normal since that. My middle school was fine, but something
+always felt wrong.
 
-But since a few years, I was really sad. Was difficult graduate from my master cause I slept
-a lot. I didn't had energy and think was difficult.
+But since a few years, I was really sad. Was difficult graduate from my master
+cause I slept a lot. I didn't had energy and think was difficult.
 
 The story from now is something predictable. I told to my therapist and I got prescribed some
 antidepressants. Since that I feel fine. I'm not a sunshine all the time, but I can manage

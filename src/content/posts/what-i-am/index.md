@@ -1,7 +1,7 @@
 ---
 title: 'What I am?'
 published: 2025-12-11
-draft: false
+draft: true
 description: 'Divagations about what I am'
 tags: ['random']
 ---

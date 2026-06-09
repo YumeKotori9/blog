@@ -12,7 +12,6 @@ import remarkDescription from './src/plugins/remark-description' /* Add descript
 import remarkReadingTime from './src/plugins/remark-reading-time' /* Add reading time to frontmatter */
 import rehypeTitleFigure from './src/plugins/rehype-title-figure' /* Wraps titles in figures */
 import { remarkGithubCard } from './src/plugins/remark-github-card'
-import { fromHtmlIsomorphic } from 'hast-util-from-html-isomorphic'
 import rehypeExternalLinks from 'rehype-external-links'
 import remarkDirective from 'remark-directive' /* Handle ::: directives as nodes */
 import rehypeUnwrapImages from 'rehype-unwrap-images'
@@ -27,8 +26,6 @@ import rehypePixelated from './src/plugins/rehype-pixelated' /* Custom plugin to
 // https://astro.build/config
 export default defineConfig({
   server: {
-    port: 8000,
-    // host: true
     allowedHosts: ['devtest.cuxim.com', 'kotori.cuxim.com'],
   },
   site: siteConfig.site,
@@ -59,7 +56,16 @@ export default defineConfig({
       ],
       rehypeUnwrapImages,
       rehypePixelated,
-      rehypeKatex,
+      [
+        rehypeKatex,
+        {
+          macros: {
+            '\\Eqand': '\\qquad\\text{and}\\qquad',
+            '\\lthen': '\\rightarrow',
+            '\\liff': '\\leftrightarrow',
+          },
+        },
+      ],
     ],
   },
   image: {
