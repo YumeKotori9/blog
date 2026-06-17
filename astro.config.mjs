@@ -61,8 +61,10 @@ export default defineConfig({
         {
           macros: {
             '\\Eqand': '\\qquad\\text{and}\\qquad',
+            '\\Eqor': '\\qquad\\text{or}\\qquad',
             '\\lthen': '\\rightarrow',
             '\\liff': '\\leftrightarrow',
+            '\\unique': '{!}',
           },
         },
       ],

@@ -1,5 +1,5 @@
 ---
-title: 'Axioms of Set Theory'
+title: "Russell's Paradox and the language of set theory"
 published: 2026-06-08
 draft: false
 description: "Notes on Jech's Set Theory book"
