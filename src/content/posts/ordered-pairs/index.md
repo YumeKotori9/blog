@@ -1,7 +1,7 @@
 ---
 title: 'Ordered pairs'
 published: 2026-06-16
-draft: true
+draft: false
 description: 'Proof of main property of the set definition of ordered paris'
 tags: ['math', 'set theory', 'notes']
 ---
