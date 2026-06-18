@@ -65,6 +65,7 @@ export default defineConfig({
             '\\lthen': '\\rightarrow',
             '\\liff': '\\leftrightarrow',
             '\\unique': '{!}',
+            '\\symdiff': '\\mathbin\\triangle',
           },
         },
       ],
