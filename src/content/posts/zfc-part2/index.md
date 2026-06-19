@@ -12,7 +12,7 @@ tags: ['set theory', 'math', 'notes']
 \{u\in X : \phi(u)\}$:
 
 $$
-  \forall X \, \exists Y  \, \forall u \bigl(u \in Y \liff u \in X \land \phi(u)\bigr)
+  \forall X \, \exists Y  \, \forall u \bigl(u \in Y \liff u \in X \land \phi(u)\bigr).
 $$
 
 This is one of my favorites axioms. Remember how the (false) axiom of
@@ -163,13 +163,13 @@ $$
 $$
 
 As you can see, those modifiers shrink propositions a lot and believe or not are
-useful. For example, the separation and union axioms (or at least an equivalent
-version of those) can be rewritten as follows:
+useful. For example, the union axioms (or at least an equivalent version) can be
+rewritten as follows:
 
-- Separation: $\forall X \, \exists Y \, \forall u \in Y \bigl(u \in X
-  \land \phi(u)\bigr)$
-- Union: $\forall X \, \exists Y \, \forall u \in Y \, \exists z \in X
-  (u \in z) $.
+$$
+\forall X \, \exists Y \, \forall u \in Y \, \exists z \in X
+  (u \in z).
+$$
 
 Those are pretty, aren't they? That is why I love math, with a few symbols we
 can tell a lot. Of course are obscure, like abstract art. But with enough
