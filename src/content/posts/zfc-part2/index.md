@@ -31,11 +31,11 @@ write here is not the most formal one. This axiom has other two formulations:
   \bigl( u \in Y \liff u \in X \land \psi(u, p_1, \ldots, p_n) \bigr)$.
 
 Include with those, the formulations where the $\liff$ is replaced by the
-$\lthen$. I told in the previous axiom, that this is due lazyness, but in my
+$\lthen$. I told in the previous axiom, that this is due laziness, but in my
 case is for readability. If we go deeper with first order logic, the correct
 version are the third one, since if we need to use parameters $p_1, \ldots p_n$,
 then we need to put those explicit in the formula. The second version is equivalent
-to the third version due the $n$-tuples, since we can only use the next formula
+to the third version due the $n$-tuples, since we can simply use the next formula
 
 $$
   \phi(u, p) = \exists p_1 \ldots \exists p_n \bigl( p = (p_1, \ldots, p_n)

@@ -1,6 +1,6 @@
 ---
 title: 'The Zermelo–Fraenkel-Choice Set Theory Theory - Part 1'
-published: 2026-06-16
+published: 2026-06-15
 draft: false
 description: 'Description and formulation of ZFC set theory axioms'
 tags: ['set theory', 'math', 'notes']

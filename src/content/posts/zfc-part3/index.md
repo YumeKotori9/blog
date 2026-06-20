@@ -167,6 +167,10 @@ $$
   f \restriction U \coloneqq \{(x,y) \in f : x \in U\}
 $$
 
+Technically, the set $U$ not necessary need to be a subset of $X$, but it's not
+a common thing. In those cases we can extend the definition to any set $U$, the
+formula is the same and is equivalent to $f \restriction U \cap \dom(f)$.
+
 We say that a function $g$ is an _extension_ of $f$ if $f \subset g$. Or in
 other words, if $\dom(f) \subset \dom(g)$ and $f(x) = g(x)$ for every $x \in
 \dom(f)$.
@@ -188,6 +192,10 @@ $$
   f_{-1}(V) &\coloneqq \{x : f(x) \in V\}.
 \end{align*}
 $$
+
+Similarly to the restriction, those definitions can be extended to sets that are
+not contained to the domain or range, respectively. It's not common, the formula
+is the same and it's equivalent to $f(U \cap \dom(f))$ and $f_{-1}(V \cap \ran(f))$.
 
 If $f\coloneqq X \to Y$ is onto, then we can define the _inverse_ of $f$ as the
 function $f^{-1} \colon \ran(f) \to X$ defined as follows:
