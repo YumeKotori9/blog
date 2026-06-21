@@ -71,6 +71,7 @@ export default defineConfig({
             '\\ran': '\\operatorname{ran}',
             '\\field': '\\operatorname{field}',
             '\\restriction': '\\upharpoonright',
+            '\\N': '\\mathbb{N}',
           },
         },
       ],
