@@ -52,9 +52,9 @@ deploy:
   @echo "Building only posts"
   just build-posts
   @echo "Uploading to server directory"
-  sudo rsync --progress -av {{root}}/dist/ {{deploy_dir}}
+  rsync --progress -av {{root}}/dist/ {{deploy_dir}}
   @echo "Building full blog"
   pnpm build
   @echo "Uploading to server directory"
-  sudo rsync --progress -av {{root}}/dist/ {{deploy_dir}}
+  rsync --progress -av {{root}}/dist/ {{deploy_dir}}
 

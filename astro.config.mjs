@@ -61,8 +61,17 @@ export default defineConfig({
         {
           macros: {
             '\\Eqand': '\\qquad\\text{and}\\qquad',
+            '\\Eqor': '\\qquad\\text{or}\\qquad',
             '\\lthen': '\\rightarrow',
             '\\liff': '\\leftrightarrow',
+            '\\unique': '{!}',
+            '\\symdiff': '\\mathbin\\triangle',
+            '\\cP': '\\mathcal P',
+            '\\dom': '\\operatorname{dom}',
+            '\\ran': '\\operatorname{ran}',
+            '\\field': '\\operatorname{field}',
+            '\\restriction': '\\upharpoonright',
+            '\\N': '\\mathbb{N}',
           },
         },
       ],
