@@ -1,7 +1,7 @@
 ---
 title: 'How is being happy?'
 published: 2025-11-17
-draft: true
+draft: false
 description: 'How I feel after half year on antidepressants'
 tags: ['random']
 ---

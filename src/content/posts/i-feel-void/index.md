@@ -1,7 +1,7 @@
 ---
 title: 'I feel void'
 published: 2025-11-09
-draft: true
+draft: false
 description: 'My feelings about me'
 tags: ['random']
 ---
